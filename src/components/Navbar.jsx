@@ -4,7 +4,7 @@ import "./styles/navbar.css";
 
 function Navbar() {
     return (
-        <nav className='navbar'>
+        <nav className='navbar container'>
             <div className="logo">
                 <h1><Link to="/">MGS</Link></h1>
             </div>

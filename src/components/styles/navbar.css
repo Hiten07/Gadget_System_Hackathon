@@ -1,3 +1,9 @@
+.logo h1 a {
+    color: #453281;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
 .navbar {
     display: flex;
     align-items: center;
@@ -8,5 +14,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+li {
+    list-style: none;
 }

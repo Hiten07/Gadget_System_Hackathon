@@ -6,15 +6,14 @@ import Register from './pages/register';
 import Navbar from './components/Navbar';
 
 function App() {
-
+  const isLogin = true;
   return (
     <>
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path='/home' element={<Home />} />
+          <Route path='/' element={isLogin ? <Home /> : <Login />} />
           <Route path='/register' element={<Register />} />
-          <Route path='/login' element={<Login />} />
         </Routes>
       </BrowserRouter>
     </>
