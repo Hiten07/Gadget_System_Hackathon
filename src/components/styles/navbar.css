@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
 .logo h1 a {
-    color: #453281;
+    color: var(--primary-color);
     letter-spacing: 2px;
     font-weight: 900;
+    font-family: 'Bruno Ace', cursive;
 }
 
 .navbar {
@@ -24,4 +27,16 @@ a {
 
 li {
     list-style: none;
+}
+
+.navbar-link a {
+    transition: 0.2s ease-in-out;
+}
+
+.navbar-link a:hover {
+    color: var(--light-text-color);
+}
+
+.active-link {
+    color: var(--light-text-color);
 }

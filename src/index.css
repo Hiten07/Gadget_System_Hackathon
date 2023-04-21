@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+:root {
+    --primary-color: #453281;
+    --light-text-color: #57478e;
+}
+
 * {
     padding: 0;
     margin: 0;
