@@ -1,0 +1,15 @@
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 65px);
+}
+
+.gif {
+    width: 50%;
+}
+
+.register-form {
+    width: 50%;
+}
