@@ -1,12 +1,12 @@
 import React from 'react'
-import registerGif from '../assets/register.gif'
-import './styles/register.svg'
+// import registerGif from '../assets/register.gif'
+// import './styles/register.svg'
 
 const register = () => {
   return (
     <section className='register container'>
       <div className="gif">
-        <img src={registerGif} alt="Register" />
+        {/* <img src={registerGif} alt="Register" /> */}
       </div>
       <div className="register-form">
         <form method="post">
