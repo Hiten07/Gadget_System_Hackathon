@@ -1,4 +1,4 @@
-.reset-password {
+.login {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,11 +10,11 @@
     width: 50%;
 }
 
-.reset-password-form {
+.login-form {
     width: 50%;
 }
 
-.reset-password-form h1 {
+.login-form h1 {
     margin-bottom: 1rem;
     letter-spacing: 2px;
     font-size: 2rem;
@@ -58,31 +58,6 @@ input[type=submit] {
 
 input:focus {
     border: 1px solid var(--light-text-color);
-}
-
-/* google icon */
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 600,
-        'GRAD' 0,
-        'opsz' 48
-}
-
-.password-match-notification {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.no-match-icon {
-    color: red;
-    font-size: 1rem;
-}
-
-.match-icon {
-    color: green;
-    font-size: 1rem;
 }
 
 .navigate-links {

@@ -8,14 +8,15 @@ function Navbar() {
     useEffect(() => {
         setCurrantPage(window.location.pathname);
     }, [currantPage])
+
     return (
         <nav className='navbar container'>
             <div className="logo">
                 <h1><Link to="/">MGS</Link></h1>
             </div>
             <ul className='navbar-link'>
-                <li><Link to="/register" className={currantPage === '/register' ? "active-link" : ""}>Registration</Link></li>
-                <li><Link to="/login" className={currantPage === '/login' ? "active-link" : ""}>Login</Link></li>
+                <li><Link to="/register" className={currantPage === '/register' ? "active-link" : ""} onClick={() => setCurrantPage("/register")}>Registration</Link></li>
+                <li><Link to="/login" className={currantPage === '/login' ? "active-link" : ""} onClick={() => setCurrantPage("/login")}>Login</Link></li>
             </ul>
         </nav>
     )
