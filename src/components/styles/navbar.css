@@ -11,6 +11,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #ffffff;
+}
+
+.navbar-container {
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: var(--side-padding);
 }
 
 .navbar-link {

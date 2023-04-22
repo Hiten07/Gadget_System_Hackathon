@@ -1,0 +1,41 @@
+.selection {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.4rem;
+    padding-left: 1rem;
+}
+
+.selection span {
+    cursor: pointer;
+}
+
+.form-control {
+    margin-top: 2rem;
+}
+
+select {
+    padding: 0.25rem;
+}
+
+.active {
+    padding: 0.2rem 1rem;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.deActive {
+    padding: 0.2rem 1rem;
+    color: #707070;
+}
+
+.add-product-content h2 {
+    letter-spacing: 1.4px;
+}
+
+.row_column {
+    width: 100%;
+}
+
+.row_column input {
+    width: 36%;
+    margin-right: 10px;
+}

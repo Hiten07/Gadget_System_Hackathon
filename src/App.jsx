@@ -5,6 +5,9 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Navbar from './components/Navbar';
 import ResetPassword from './pages/ResetPassword';
+import Dashboard from './pages/Dashboard';
+import AddProduct from './pages/AddProduct';
+import SellPurchase from './pages/SellPurchase';
 
 function App() {
   const isLogin = true;
@@ -14,10 +17,12 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path='/' element={isLogin ? <Home /> : <Login />} />
+          <Route path='/' element={isLogin ? <Dashboard /> : <Login />} />
           <Route path='/register' element={<Register />} />
           <Route path='/login' element={<Login />} />
           <Route path='/reset-password' element={<ResetPassword />} />
+          <Route path='/add-product' element={<AddProduct />} />
+          <Route path='/sell-purchase' element={<SellPurchase />} />
         </Routes>
       </BrowserRouter>
     </>
