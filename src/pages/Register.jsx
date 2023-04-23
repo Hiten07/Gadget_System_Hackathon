@@ -27,7 +27,7 @@ const register = () => {
             <input type="password" name="password" />
           </div>
           <div className="input-filed">
-            <label htmlFor="cPassword">Conform Password</label>
+            <label htmlFor="cPassword">Confirm Password</label>
             <input type="password" name="cPassword" />
           </div>
           <input type="submit" value="Register" />
