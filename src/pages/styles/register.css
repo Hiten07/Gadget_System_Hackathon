@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: calc(100vh - 65px);
+    height: calc(100vh - 100px);
 }
 
 .svg {
@@ -86,12 +86,17 @@ input:focus {
 }
 
 .navigate-links {
-    margin-top: 1rem;
+    margin-block: 1rem;
     display: flex;
     justify-content: flex-end;
 }
 
 @media screen and (max-width: 768px) {
+    .register {
+        flex-direction: column;
+        height: auto;
+    }
+
     .svg {
         width: 100%;
     }

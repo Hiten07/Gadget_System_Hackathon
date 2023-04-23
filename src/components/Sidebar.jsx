@@ -26,6 +26,12 @@ const Sidebar = () => {
             </Link>
             <Link to={'/account'}>
                 <div className="sidebar-link">
+                    <li className='material-symbols-outlined' >Settings</li>
+                    {screenSize > 768 && <span>Setting</span>}
+                </div>
+            </Link >
+            <Link to={'/account'}>
+                <div className="sidebar-link">
                     <li className='material-symbols-outlined' >Account_Balance_Wallet</li>
                     {screenSize > 768 && <span>Account</span>}
                 </div>

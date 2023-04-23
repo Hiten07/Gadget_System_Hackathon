@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* align-items: center; */
     padding: 1rem 1rem;
     gap: 1rem;
     background-color: var(--light-text-color);
@@ -21,11 +20,17 @@
 }
 
 .sidebar:nth-child(1) {
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .sidebar a {
     color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        z-index: 1;
+    }
 }
 
 
