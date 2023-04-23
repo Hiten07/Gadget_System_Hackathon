@@ -1,7 +1,7 @@
 import React from 'react'
 // import registerGif from '../assets/register.gif'
 // import './styles/register.svg'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import registerSvg from '../assets/register.svg'
 import './styles/register.css'
 import { Link } from 'react-router-dom';
