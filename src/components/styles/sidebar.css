@@ -1,0 +1,52 @@
+.sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 1rem;
+    gap: 1rem;
+    background-color: var(--light-text-color);
+    color: #FFFFFF;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1rem;
+}
+
+.sidebar:nth-child(1) {
+    padding-top: 1rem;
+}
+
+.sidebar a {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        z-index: 1;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 1rem 1rem;
+        gap: 1.6rem;
+        background-color: var(--light-text-color);
+        color: #FFFFFF;
+        height: (100vh - 65px);
+        width: 15%;
+        position: fixed;
+        top: 65px;
+        left: 0;
+    }
+}

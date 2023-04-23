@@ -1,20 +1,20 @@
-.register {
+.login {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 65px);
 }
 
 .svg {
     width: 50%;
 }
 
-.register-form {
+.login-form {
     width: 50%;
 }
 
-.register-form h1 {
+.login-form h1 {
     margin-bottom: 1rem;
     letter-spacing: 2px;
     font-size: 2rem;
@@ -60,48 +60,22 @@ input:focus {
     border: 1px solid var(--light-text-color);
 }
 
-/* google icon */
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL' 0,
-        'wght' 600,
-        'GRAD' 0,
-        'opsz' 48
-}
-
-.password-match-notification {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.no-match-icon {
-    color: red;
-    font-size: 1rem;
-}
-
-.match-icon {
-    color: green;
-    font-size: 1rem;
-}
-
 .navigate-links {
-    margin-block: 1rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: flex-end;
 }
 
 @media screen and (max-width: 768px) {
-    .register {
+    .login {
         flex-direction: column;
-        height: auto;
     }
 
     .svg {
         width: 100%;
     }
 
-    .register-form {
+    .login-form {
         width: 100%;
     }
 }

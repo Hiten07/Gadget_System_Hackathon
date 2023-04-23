@@ -3,6 +3,7 @@
 :root {
     --primary-color: #453281;
     --light-text-color: #57478e;
+    --side-padding: 1rem;
 }
 
 * {
@@ -12,12 +13,67 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+::selection {
+    background-color: #7c70a7;
+    color: #ffffff;
+}
+
 .container {
     max-width: 100vw;
     margin: 0 auto;
     padding: 1rem 0.5rem;
-} 
+    position: relative;
+    top: 62px;
+}
+
+.admin-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.main-content-container {
+    /* width: 100%; */
+    position: relative;
+    right: 0;
+    top: 80px;
+    padding: 0 1rem 4rem 1rem;
+}
+
+/* google icon */
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 48
+}
 
 img {
     max-width: 100%;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 1rem 0.5rem;
+        position: relative;
+        top: 0;
+    }
+}
+
+@media (min-width: 769px) {
+    .main-content-container {
+        width: 85%;
+        position: absolute;
+        right: 0;
+    }
 }

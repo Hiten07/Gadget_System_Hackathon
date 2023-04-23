@@ -1,0 +1,25 @@
+.selection {
+    display: flex;
+    gap: 2rem;
+    margin-block: 1.4rem;
+    padding-left: 1rem;
+}
+
+.selection span {
+    cursor: pointer;
+}
+
+.active {
+    padding: 0.2rem 1rem;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.deActive {
+    padding: 0.2rem 1rem;
+    color: #707070;
+}
+
+.sell,
+.purchase {
+    overflow: hidden;
+}

@@ -1,0 +1,52 @@
+h2 {
+    letter-spacing: 1.5px;
+}
+
+.day-numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.day-numbers .title {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.day-numbers .title li {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+}
+
+.day-numbers .title span {
+    color: var(--light-text-color);
+    font-size: 1.25rem;
+}
+
+.day-numbers .day p {
+    font-size: 1.1rem;
+}
+
+.day-numbers .day {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.chart {
+    margin-top: 2rem;
+    width: 50%;
+    height: 600px;
+}
+
+.charts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
