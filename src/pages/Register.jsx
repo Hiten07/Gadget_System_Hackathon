@@ -1,6 +1,4 @@
 import React from 'react'
-// import registerGif from '../assets/register.gif'
-// import './styles/register.svg'
 import { useEffect, useState } from 'react'
 import registerSvg from '../assets/register.svg'
 import './styles/register.css'
@@ -47,8 +45,6 @@ const register = () => {
 
   return (
     <section className='register container'>
-      <div className="gif">
-        {/* <img src={registerGif} alt="Register" /> */}
       <div className="svg">
         <img src={registerSvg} alt="Register" />
       </div>
@@ -97,7 +93,6 @@ const register = () => {
             <span>I Have already Account ! <Link to={"/login"} style={{ color: 'blue' }}>Login</Link></span>
           </div>
         </form>
-        </div>
       </div>
     </section>
   )
