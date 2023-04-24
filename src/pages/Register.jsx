@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+// import registerGif from '../assets/register.gif'
+// import './styles/register.svg'
+import { useEffect, useState } from 'react'
 import registerSvg from '../assets/register.svg'
 import './styles/register.css'
 import { Link } from 'react-router-dom';
-
 const register = () => {
   const [focus, setFocus] = useState(null);
   const [input, setInput] = useState({
@@ -45,6 +47,8 @@ const register = () => {
 
   return (
     <section className='register container'>
+      <div className="gif">
+        {/* <img src={registerGif} alt="Register" /> */}
       <div className="svg">
         <img src={registerSvg} alt="Register" />
       </div>
@@ -68,6 +72,9 @@ const register = () => {
             <input type="password" name="password" placeholder='Password' onFocus={(e) => setFocus(e.target.name)} value={input.password} onChange={inputChange} required />
           </div>
           <div className="input-filed">
+
+            <label htmlFor="cPassword">Confirm Password</label>
+            <input type="password" name="cPassword" />
             <label htmlFor="cPassword" className={focus === 'cPassword' ? 'focus-input' : ""}>Conform Password</label>
             <input type="password" name="cPassword" placeholder='Conform password' onFocus={(e) => setFocus(e.target.name)} value={input.cPassword} onChange={inputChange} required />
           </div>
@@ -90,6 +97,7 @@ const register = () => {
             <span>I Have already Account ! <Link to={"/login"} style={{ color: 'blue' }}>Login</Link></span>
           </div>
         </form>
+        </div>
       </div>
     </section>
   )

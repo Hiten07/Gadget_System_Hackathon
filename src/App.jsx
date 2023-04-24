@@ -18,6 +18,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={isLogin ? <Dashboard /> : <Login />} />
+          <Route path='/home' element={<Home/>} />
           <Route path='/register' element={<Register />} />
           <Route path='/login' element={<Login />} />
           <Route path='/reset-password' element={<ResetPassword />} />
