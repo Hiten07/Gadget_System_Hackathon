@@ -14,10 +14,9 @@ function Home() {
               
               <div className="home-paragraph">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quisquam 
-                    repellat repellendus laudantium perferendis qui. Nobis, impedit.
-                    Repellat modi praesentium eius ex quam, fugit magni quod, 
-                    itaque aperiam quas hic!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit adipisci 
+                    nesciunt iste? At saepe eligendi nostrum aliquid totam, ipsa aspernatur.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, id.
                   </p>
               </div>
                 
