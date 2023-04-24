@@ -41,7 +41,10 @@ h2 {
 .chart {
     margin-top: 2rem;
     width: 50%;
-    height: 600px;
+    height: 300px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .charts {
@@ -49,4 +52,42 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    margin-block: 1rem;
+}
+
+.less-stock {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.less-stock div {
+    width: 100%;
+}
+
+h3 {
+    padding: 1.8rem 0 1rem 0;
+    color: #292929;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+}
+
+th {
+    height: 30px;
+    color: var(--primary-color);
+}
+
+td {
+    text-align: center;
+    padding: 0.25rem 0;
 }

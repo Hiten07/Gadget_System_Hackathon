@@ -101,6 +101,98 @@ const Dashboard = () => {
                     </div>
                 </div>
 
+                <div className="less-stock">
+                    <div>
+                        <h3>Cover less stock</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Brand</th>
+                                    <th>Model</th>
+                                    <th>Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Apple</td>
+                                    <td>iphone 14 pro</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Vivo</td>
+                                    <td>V15</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>samsung</td>
+                                    <td>F42</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div>
+                        <h3>Glass less stock</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Brand</th>
+                                    <th>Model</th>
+                                    <th>Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>samsung</td>
+                                    <td>F42</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Oppo</td>
+                                    <td>Rano 2 pro</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Apple</td>
+                                    <td>iphone 14 pro</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Vivo</td>
+                                    <td>V15</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div>
+                        <h3>Accessories less stock</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Brand</th>
+                                    <th>Model</th>
+                                    <th>Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Boat</td>
+                                    <td>Headphone</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>samsung</td>
+                                    <td>USB Cable</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
             </div>
         </div>
     )
