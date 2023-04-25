@@ -12,6 +12,12 @@ const Sidebar = () => {
                     {screenSize > 768 && <span>Dashboard</span>}
                 </div>
             </Link>
+            <Link to={'/search'}>
+                <div className="sidebar-link">
+                <li className="material-symbols-outlined">search</li>
+                    {screenSize > 768 && <span>Search Product</span>}
+                </div>
+            </Link>
             <Link to={'/add-product'}>
                 <div className="sidebar-link">
                     <li className='material-symbols-outlined' >Add_Circle</li>
@@ -24,7 +30,7 @@ const Sidebar = () => {
                     {screenSize > 768 && <span>sell & Purchase</span>}
                 </div>
             </Link>
-            <Link to={'/account'}>
+            <Link to={'/setting'}>
                 <div className="sidebar-link">
                     <li className='material-symbols-outlined' >Settings</li>
                     {screenSize > 768 && <span>Setting</span>}

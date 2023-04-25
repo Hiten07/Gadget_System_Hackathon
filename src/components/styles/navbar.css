@@ -37,6 +37,7 @@
 a {
     text-decoration: none;
     color: #000000;
+    margin-right: 1rem;
 }
 
 li {
@@ -53,4 +54,10 @@ li {
 
 .active-link {
     color: var(--light-text-color);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-link {
+        gap: .2rem;
+    }
 }

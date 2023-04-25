@@ -1,0 +1,132 @@
+.home-container {
+    max-width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    /* overflow: auto; */
+}
+
+.grid {
+    display: grid;
+    gap: 8rem;
+}
+
+.grid-two-column {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.home-left-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8rem;
+    justify-content: center;
+}
+
+.home-heading {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.home-paragraph {
+    margin-top: 1.5rem;
+    margin-bottom: 3.2rem;
+    max-width: 30rem;
+}
+
+.home-paragraph p {
+    font-size: 0.8rem;
+    color: white;
+    text-transform: capitalize;
+}
+
+<<<<<<< HEAD
+.home-button {
+    padding: 0.5rem;
+    color: var(--primary-color);
+    border: none;
+    width: 10rem;
+    cursor: pointer;
+    max-width: auto;
+=======
+.global-button {
+    background-color: var(--white);
+    color: var(--light-text-color);
+>>>>>>> cfacd8d312b95c5b2e7c7a9f671e8f73a32170c0
+}
+
+.global-button:hover {
+    background-color: var(--light-text-color);
+}
+
+.btn-text {
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.home-right-section img {
+    margin-top: 5rem;
+    height: 500px;
+    width: 450px;
+    object-fit: contain;
+}
+
+.home-img {
+    max-width: 50%;
+}
+
+@media (max-width: 998px) {
+    .grid {
+        gap: 5rem;
+    }
+
+    .home-left-section {
+        padding: 5rem 5rem;
+    }
+
+    .home-heading {
+        font-size: 1rem;
+    }
+
+    .home-paragraph {
+        margin-top: 1.2rem;
+        max-width: 25rem;
+    }
+
+    .home-right-section img {
+        margin-top: 7rem;
+        width: 400px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .grid {
+        gap: 2rem;
+    }
+
+    .home-container {
+        height: 100%;
+    }
+
+    .grid-two-column {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .home-left-section {
+        padding: 5rem 5rem;
+    }
+
+    .home-paragraph p {
+        font-size: 0.7rem;
+    }
+
+    .home-right-section img {
+        width: 300px;
+        height: 300px;
+        margin: 0 5rem;
+    }
+}
