@@ -3,6 +3,7 @@
 :root {
     --primary-color: #453281;
     --light-text-color: #57478e;
+    --white: #ffffff;
     --side-padding: 1rem;
 }
 
@@ -36,6 +37,18 @@
     right: 0;
     top: 80px;
     padding: 0 1rem 4rem 1rem;
+}
+
+/* Global Button CSS */
+
+.global-button {
+    padding: 0.5rem;
+    border: none;
+    width: 10rem; 
+    cursor: pointer;
+    max-width: auto;
+    background-color: white;
+    color: var(--primary-color);
 }
 
 /* google icon */

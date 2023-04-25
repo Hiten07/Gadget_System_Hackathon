@@ -12,6 +12,12 @@ const Sidebar = () => {
                     {screenSize > 768 && <span>Dashboard</span>}
                 </div>
             </Link>
+            <Link to={'/search'}>
+                <div className="sidebar-link">
+                <li className="material-symbols-outlined">search</li>
+                    {screenSize > 768 && <span>Search Product</span>}
+                </div>
+            </Link>
             <Link to={'/add-product'}>
                 <div className="sidebar-link">
                     <li className='material-symbols-outlined' >Add_Circle</li>
