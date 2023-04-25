@@ -23,3 +23,19 @@
 .purchase {
     overflow: hidden;
 }
+
+#html5qr-code-full-region__scan_region img {
+    width: 100px;
+    height: 100px;
+}
+
+#html5qr-code-full-region {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.html5-qrcode-element {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}

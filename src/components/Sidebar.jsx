@@ -24,7 +24,7 @@ const Sidebar = () => {
                     {screenSize > 768 && <span>sell & Purchase</span>}
                 </div>
             </Link>
-            <Link to={'/account'}>
+            <Link to={'/setting'}>
                 <div className="sidebar-link">
                     <li className='material-symbols-outlined' >Settings</li>
                     {screenSize > 768 && <span>Setting</span>}
