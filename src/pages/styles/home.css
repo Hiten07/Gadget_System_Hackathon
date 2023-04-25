@@ -41,17 +41,12 @@
     text-transform: capitalize;
 } 
 
-.home-button {
-    padding: 0.5rem;
-    color: var(--primary-color);
-    border: none;
-    width: 10rem; 
-    cursor: pointer;
-    max-width: auto;
+.global-button {
+    background-color: var(--white);
+    color: var(--light-text-color);
 }
 
-.home-button:hover {
-    border: 1px solid white;
+.global-button:hover {
     background-color: var(--light-text-color);
 }
 

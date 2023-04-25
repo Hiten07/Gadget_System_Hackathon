@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Search  from './pages/SearchProduct';
 import Navbar from './components/Navbar';
 import ResetPassword from './pages/ResetPassword';
 import Dashboard from './pages/Dashboard';
@@ -21,6 +22,7 @@ function App() {
           <Route path='/home' element={<Home/>} />
           <Route path='/register' element={<Register />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/search' element={<Search />} />
           <Route path='/reset-password' element={<ResetPassword />} />
           <Route path='/add-product' element={<AddProduct />} />
           <Route path='/sell-purchase' element={<SellPurchase />} />

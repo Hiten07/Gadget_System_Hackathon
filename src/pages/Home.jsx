@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import "./styles/home.css"
+import "../index.css"
 
 function Home() {
   return (
@@ -20,7 +21,7 @@ function Home() {
                   </p>
               </div>
                 
-              <button className='home-button'><Link className to={"/register"}>Explore Here</Link></button>
+              <button className='global-button'><Link className to={"/register"}>Explore Here</Link></button>
         </div>
 
        <div className="home-right-section">
