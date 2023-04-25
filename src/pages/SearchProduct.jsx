@@ -49,7 +49,7 @@ const SearchProduct = () => {
                     <tr>
                         <td>1</td>
                         <td>01</td>
-                        <td>2 row 1 column</td>
+                        <td>2-row 1-column</td>
                         <td>xyz</td>
                         <td>m 16</td>
                         <td>15</td>
