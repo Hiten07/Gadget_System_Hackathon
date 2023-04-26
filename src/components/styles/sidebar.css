@@ -31,10 +31,43 @@
     .sidebar {
         z-index: 1;
     }
+
+    .sidebar-link span {
+        display: none;
+    }
+
+    .logout {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1325px) {
+    .sidebar-link span {
+        display: none;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 1rem 1rem;
+        gap: 1.6rem;
+        background-color: var(--light-text-color);
+        color: #FFFFFF;
+        height: (100vh - 65px);
+        width: 7%;
+        position: fixed;
+        top: 65px;
+        left: 0;
+    }
+
+    .sidebar a {
+        margin: 0 auto;
+    }
 }
 
 
-@media (min-width: 769px) {
+@media (min-width: 1326px) {
     .sidebar {
         display: flex;
         flex-direction: column;

@@ -44,7 +44,7 @@
 .global-button {
     padding: 0.5rem;
     border: none;
-    width: 10rem; 
+    width: 10rem;
     cursor: pointer;
     max-width: auto;
     background-color: white;
@@ -82,11 +82,20 @@ img {
     }
 
     .main-content-container {
-        top: 0;
+        top: 50px;
+        padding: 0 0.65rem 4rem 0.65rem;
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 1325px) {
+    .main-content-container {
+        width: 93%;
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media (min-width: 1326px) {
     .main-content-container {
         width: 85%;
         position: absolute;

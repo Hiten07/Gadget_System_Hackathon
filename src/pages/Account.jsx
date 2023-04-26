@@ -43,7 +43,7 @@ function Account() {
             <Sidebar />
             <div className="main-content-container">
                 <h2>Account</h2>
-                <div className="chart">
+                <div className="chart account-chart">
                     <Line
                         data={data}
                         options={{

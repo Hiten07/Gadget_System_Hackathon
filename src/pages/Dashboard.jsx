@@ -66,6 +66,7 @@ const Dashboard = () => {
                 </div>
 
                 <div className="charts">
+                    <h3>Revenue Chart</h3>
                     <div className="chart">
                         <Bar
                             data={data}
@@ -83,7 +84,7 @@ const Dashboard = () => {
                         />
                     </div>
 
-                    <div className="chart">
+                    {/* <div className="chart">
                         <Line
                             data={data}
                             options={{
@@ -98,7 +99,7 @@ const Dashboard = () => {
                                 }
                             }}
                         />
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="less-stock">

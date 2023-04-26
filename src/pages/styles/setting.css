@@ -1,0 +1,36 @@
+.setting-container {
+    margin-top: 1.5rem;
+}
+
+.setting-title {
+    background-color: var(--light-text-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.8rem;
+    padding: 0.5rem 1rem;
+    letter-spacing: 1.2px;
+    border: 1px solid var(--light-text-color);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.setting-title h4 {
+    margin: 0;
+}
+
+.setting-show {
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+
+.setting-show h4 {
+    margin-block: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .setting-show {
+        padding: 0 0.6rem;
+    }
+}

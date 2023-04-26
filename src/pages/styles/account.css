@@ -7,6 +7,10 @@
     box-shadow: none;
 }
 
+.account-chart {
+    margin-top: 2rem;
+}
+
 .change-btn {
     display: flex;
     flex-direction: row;
