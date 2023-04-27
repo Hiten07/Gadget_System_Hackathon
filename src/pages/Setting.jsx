@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Sidebar from '../components/Sidebar'
 import './styles/setting.css'
 
@@ -6,6 +6,7 @@ const Setting = () => {
     const [section, setSection] = useState(false);
     const [model, setModel] = useState(false);
     const [qr, setQr] = useState(false);
+
     return (
         <div className='admin-container'>
             <Sidebar />
@@ -113,7 +114,6 @@ const Setting = () => {
                             </table>
                         </div>
                     )}
-
 
                     <div className="setting-title" onClick={() => model ? setQr(false) : setQr(true)} >
                         <h4>QR Code</h4>
