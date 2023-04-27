@@ -68,8 +68,8 @@ const register = () => {
             <input type="password" name="password" placeholder='Password' onFocus={(e) => setFocus(e.target.name)} value={input.password} onChange={inputChange} required />
           </div>
           <div className="input-filed">
-            <label htmlFor="cPassword" className={focus === 'cPassword' ? 'focus-input' : ""}>Conform Password</label>
-            <input type="password" name="cPassword" placeholder='Conform password' onFocus={(e) => setFocus(e.target.name)} value={input.cPassword} onChange={inputChange} required />
+            <label htmlFor="cPassword" className={focus === 'cPassword' ? 'focus-input' : ""}>Confirm Password</label>
+            <input type="password" name="cPassword" placeholder='Confirm password' onFocus={(e) => setFocus(e.target.name)} value={input.cPassword} onChange={inputChange} required />
           </div>
           <div className={matchPassword.focus ? '' : 'none'}>
             {matchPassword.match ? (
