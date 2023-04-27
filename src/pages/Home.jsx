@@ -15,9 +15,10 @@ function Home() {
               
               <div className="home-paragraph">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit adipisci 
-                    nesciunt iste? At saepe eligendi nostrum aliquid totam, ipsa aspernatur.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, id.
+                    Our system will make it easier for the shopkeepers as well as customers 
+                    by managing the accessories having their report of model numbers, 
+                    available with their quantity, and easier to locate exact accessories
+                    whenever there is requirement.
                   </p>
               </div>
                 
