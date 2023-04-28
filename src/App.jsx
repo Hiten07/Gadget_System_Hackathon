@@ -12,6 +12,7 @@ import SellPurchase from './pages/SellPurchase';
 import Setting from './pages/Setting';
 import Account from './pages/Account';
 import ShopDetail from './pages/ShopDetail';
+import Verification from './pages/Verification';
 
 function App() {
   const isLogin = true;
@@ -28,6 +29,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/search' element={<Search />} />
           <Route path='/reset-password' element={<ResetPassword />} />
+          <Route path='/verify/:email' element={<Verification />} />
           <Route path='/add-product' element={<AddProduct />} />
           <Route path='/sell-purchase' element={<SellPurchase />} />
           <Route path='/setting' element={<Setting />} />

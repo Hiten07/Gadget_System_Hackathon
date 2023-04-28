@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import registerSvg from '../assets/register.svg'
 import './styles/register.css'
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const register = () => {
   const [focus, setFocus] = useState(null);
@@ -16,6 +18,7 @@ const register = () => {
     focus: false,
     match: false
   });
+  const navigate = useNavigate();
 
   const inputChange = (e) => {
     const inputName = e.target.name;
@@ -38,9 +41,24 @@ const register = () => {
   }, [input.cPassword])
 
 
-  const formSubmit = (e) => {
+  const formSubmit = async (e) => {
     e.preventDefault();
     console.log(input);
+
+    const { data } = await axios.post("/api/user/register", {
+      name: input.name,
+      number: input.number,
+      email: input.email,
+      password: input.password
+    }, {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    if (data) {
+      navigate(`/verify/${input.email}`);
+    }
+    console.log(data);
   }
 
   return (
