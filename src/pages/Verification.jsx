@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import VerifySvg from '../assets/verify.svg'
 import './styles/resetPassword.css'
 import { useParams } from 'react-router-dom';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 
 function Verification() {
@@ -10,6 +12,7 @@ function Verification() {
         otp: "",
     });
     const params = useParams();
+    const navigate = useNavigate();
 
     const inputChange = (e) => {
         const inputName = e.target.name;
@@ -20,11 +23,21 @@ function Verification() {
     }
 
 
-    const formSubmit = (e) => {
+    const formSubmit = async (e) => {
         e.preventDefault();
         console.log(input);
 
-        console.log(params.email);
+        const { data } = await axios.post("/api/user/verify", {
+            email: params.email,
+            otp: input.otp
+        }, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+        if (data) {
+            navigate(`/login`);
+        }
 
     }
 

@@ -1,6 +1,6 @@
+const { verifyData } = require("../middleware/auth");
 const User = require("../models/user");
 var nodemailer = require("nodemailer");
-
 
 // register
 const createUser = async (req, res) => {
@@ -90,14 +90,44 @@ const loginUser = async (req, res) => {
 
 // verify
 const verifyUser = async (req, res) => {
-  const { email } = req.body;
+  const { email, otp } = req.body;
+  const emailId = `${email}@gmail.com`;
 
-  if(email) {
-    
+  if (!email) {
+    return req.json({ success: false, message: "some thing wait wong!" });
   }
-}
+
+  const userOtp = await User.findOne({ email: emailId, otp });
+
+  if (userOtp) {
+    const updateVerifyStatus = await User.findByIdAndUpdate(userOtp._id, {
+      otp: "",
+      verify: true,
+    });
+
+    console.log(updateVerifyStatus);
+    return res.status(200).json({ success: true });
+  }
+
+  return res.status(400).json({ success: false });
+};
+
+// login or not
+const checkUserLoginOrNot = (req, res) => {
+  const loginUserData = verifyData(req.cookies);
+
+  if (loginUserData) {
+    return res
+      .status(200)
+      .json({ success: true, message: "login..", user: loginUserData });
+  } else {
+    return res.status(400).json({ success: false, message: "No login.." });
+  }
+};
 
 module.exports = {
   createUser,
   loginUser,
+  verifyUser,
+  checkUserLoginOrNot,
 };

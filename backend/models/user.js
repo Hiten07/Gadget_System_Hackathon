@@ -48,6 +48,10 @@ const userSchema = new mongoose.Schema(
       type: Number,
       required: [true, "OTP is required."],
     },
+    verify: {
+      type: Boolean,
+      default: false,
+    },
   },
   { timestamps: true }
 );

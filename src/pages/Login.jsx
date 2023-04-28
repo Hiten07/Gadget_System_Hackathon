@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import loginSvg from '../assets/login.svg'
 import './styles/login.css'
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const login = () => {
   const [focus, setFocus] = useState(null);
@@ -9,6 +11,7 @@ const login = () => {
     email: "",
     password: "",
   });
+  const navigate = useNavigate();
 
   const inputChange = (e) => {
     const inputName = e.target.name;
@@ -19,9 +22,21 @@ const login = () => {
   }
 
 
-  const formSubmit = (e) => {
+  const formSubmit = async (e) => {
     e.preventDefault();
     console.log(input);
+    const { data } = await axios.post("/api/user/login", {
+      email: input.email,
+      password: input.password
+    }, {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    if (data) {
+      navigate(`/`);
+    }
+    console.log(data);
   }
 
   return (

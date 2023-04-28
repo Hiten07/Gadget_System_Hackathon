@@ -1,14 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import { Link } from "react-router-dom";
 import "./styles/navbar.css";
+import AppContext from '../AppContext';
 
 function Navbar() {
     const [currantPage, setCurrantPage] = useState(window.location.pathname);
-
+    const context = useContext(AppContext);
     const isLogin = false;
 
     useEffect(() => {
         setCurrantPage(window.location.pathname);
+        console.log("context", context);
     }, [currantPage])
 
     return (

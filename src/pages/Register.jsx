@@ -43,7 +43,9 @@ const register = () => {
 
   const formSubmit = async (e) => {
     e.preventDefault();
-    console.log(input);
+    const emailId = input.email.split("@");
+
+    console.log(emailId[0]);
 
     const { data } = await axios.post("/api/user/register", {
       name: input.name,
@@ -56,7 +58,7 @@ const register = () => {
       }
     });
     if (data) {
-      navigate(`/verify/${input.email}`);
+      navigate(`/verify/${emailId[0]}`);
     }
     console.log(data);
   }
