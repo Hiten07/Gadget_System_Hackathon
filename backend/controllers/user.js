@@ -1,5 +1,8 @@
 const User = require("../models/user");
+var nodemailer = require("nodemailer");
 
+
+// register
 const createUser = async (req, res) => {
   try {
     const { name, number, email, password } = req.body;
@@ -24,19 +27,44 @@ const createUser = async (req, res) => {
 
       const createUser = await User.create(newUser);
 
-      createUser
-        ? res
-            .status(201)
-            .json({ success: true, message: "User Create Successfully." })
-        : res
-            .status(400)
-            .json({ success: false, message: "User Create to Fail!" });
+      if (createUser) {
+        var transporter = nodemailer.createTransport({
+          service: "gmail",
+          auth: {
+            user: "dep7901@gmail.com",
+            pass: "pnprychcocueynlj",
+          },
+        });
+
+        var mailOptions = {
+          from: "MGS <dep7901@gmail.com>",
+          to: email,
+          subject: "Sending Email using Node.js",
+          text: `That was easy! - ${otp}`,
+        };
+
+        transporter.sendMail(mailOptions, function (error, info) {
+          if (error) {
+            console.log("EEEEEEEEEEE", error);
+          } else {
+            console.log("Email sent: " + info.response);
+            res
+              .status(201)
+              .json({ success: true, message: "User Create Successfully." });
+          }
+        });
+      } else {
+        res
+          .status(400)
+          .json({ success: false, message: "User Create to Fail!" });
+      }
     }
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });
   }
 };
 
+// login
 const loginUser = async (req, res) => {
   const { email, password } = req.body;
 
@@ -59,6 +87,15 @@ const loginUser = async (req, res) => {
   }
   return res.status(400).json({ success: true, message: "Wrong Password!" });
 };
+
+// verify
+const verifyUser = async (req, res) => {
+  const { email } = req.body;
+
+  if(email) {
+    
+  }
+}
 
 module.exports = {
   createUser,

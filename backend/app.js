@@ -5,6 +5,7 @@ const cookieParser = require("cookie-parser");
 
 // routes require
 const userRoute = require("./routes/user");
+const sectionRouter = require("./routes/section");
 
 // middleware
 dotenv.config();
@@ -22,5 +23,6 @@ app.get("/api", (req, res) => {
     .json({ message: "Welcome on MGS" });
 });
 app.use("/api/user", userRoute);
+app.use("/api/section", sectionRouter);
 
 module.exports = app;
