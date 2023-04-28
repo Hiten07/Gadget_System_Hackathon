@@ -5,7 +5,7 @@ import "./styles/navbar.css";
 function Navbar() {
     const [currantPage, setCurrantPage] = useState(window.location.pathname);
 
-    const isLogin = true;
+    const isLogin = false;
 
     useEffect(() => {
         setCurrantPage(window.location.pathname);
