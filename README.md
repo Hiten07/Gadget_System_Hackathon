@@ -27,7 +27,7 @@ git clone https://github.com/Hiten07/Gadget_System_Hackathon.git
 cd Gadget_System_Hackathon
 ```
 
-3. Install project dependencies: Most Node.js projects have dependencies listed in a package.json file. Use the following command to install these dependencies:
+3. Install Frontend dependencies: Most Node.js projects have dependencies listed in a package.json file. Use the following command to install these dependencies:
 
 ```
 npm install
@@ -39,13 +39,13 @@ npm install
 npm run dev
 ```
 
-5. Change to the cloned project directory: Once the cloning process is complete, navigate into the newly created project directory:
+5. Change to the backend directory: Once the cloning process is complete, navigate into the newly created project directory:
 
 ```
 cd backend
 ```
 
-6. Install project dependencies: Most Node.js projects have dependencies listed in a package.json file. Use the following command to install these dependencies:
+6. Install Backend dependencies: Most Node.js projects have dependencies listed in a package.json file. Use the following command to install these dependencies:
 
 ```
 npm install
